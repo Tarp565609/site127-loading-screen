@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Site-127 Loading Screen</title>
+    <style>
+        /* Настройки заднего плана */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            user-select: none;
+        }
+
+        /* Темная плашка с текстом в левом нижнем углу */
+        .info-box {
+            position: absolute;
+            bottom: 8%;
+            left: 5%;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 25px;
+            border-radius: 4px;
+            border-left: 6px solid #ff3333; /* Красная линия в стиле SCP */
+            max-width: 450px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .info-box h1 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 16px;
+            color: #cccccc;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="info-box">
+        <h1>SCP-RP | Site-127</h1>
+        <p>Идет синхронизация с базой данных комплекса. Пожалуйста, удерживайте позиции до завершения загрузки файлов сервера...</p>
+    </div>
+
+</body>
+</html>
